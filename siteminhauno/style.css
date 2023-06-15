@@ -1,0 +1,74 @@
+@charset "UTF-8";
+@font-face {
+    font-family: Opensans ;
+    src: url(fonts/OpenSans-Light.ttf) format(truetype);
+}
+
+body{
+    background-color: #F4F4F6;
+}
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 5px;
+    height: 500px;
+    width: 250px;
+    color: #0577be;
+    box-shadow: 0px 1px 5px 0px #46465518;
+    font-family: 'Opensans';
+    text-align: center;
+}
+
+.inputBox{
+    left: -50%;
+    position: relative;
+   
+
+    
+}
+.inputUser{
+    font-family:'Opensans';
+    background-color:#F4F4F6;
+    outline: none;
+    border-bottom: 1px solid rgb(25, 2, 2);
+    border: none;
+    border-radius: 1px;
+    color:#0577be;
+    width: 100%;
+    position: absolute;
+    height: 50px;
+    text-align: center;
+    text-align: left;
+    text-indent: 20px;
+    
+}
+.Logo{
+    padding: 10px 10px 0px 10px;
+    position: relative;
+    
+}
+.ini{
+    margin: 0px 0px 25px 0px;
+    font-size: 14px;
+}
+.labelInput{
+    font-size: 14px;
+    width: 100%;
+    margin-top: 15px;
+    text-align: left;
+    text-indent: 20px;
+    
+    
+    position: absolute;
+    
+    
+}
+.inputUser:focus ~ .labelInput, /*subir e descer a letra*/
+.inputUser:valid ~ .labelInput
+{
+    display: none;
+}
